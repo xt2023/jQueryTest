@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <video src="mov.mp4" muted></video>
+    <script>
+        //1直接获取对象
+        // $('video');
+        //使用原生的的js来获取对象
+        var myvideo = document.querySelector('div');
+        // $(myvideo).play
+        // $('video')[0].play();
+        $('video').get(0).play()
+    </script>
+</body>
+
+</html>

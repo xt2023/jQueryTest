@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="jquery.min.js"></script>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <script>
+        // 操作样式之css方法
+        $(function() {
+            console.log($("div").css("width"));
+            $("div").css("height", 400);
+            $("div").css({
+                backgroundColor: "red",
+                width: 300
+            })
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+
+    </style>
+    <script src="jquery.min.js"></script>
+</head>
+
+<body>
+    <div>2</div>
+    <div>2</div>
+    <div>3</div>
+    <script>
+        $(function() {
+            // $("div").css("color", "red");
+            // 如果针对于同一类元素做不同操作，需要用到遍历元素（类似for，但是比for强大）
+            var arr = ["green", "red", "pink"]
+            var sum = 0;
+            // $("div").each(function(i, domEle) {
+            //     console.log(i);
+            //     console.log(domEle);
+            //     $(domEle).css("color", arr[i])
+            //     sum += parseInt($(domEle).text());
+            // })
+            // console.log(sum);
+
+            //遍历数组，处理数据
+            $.each($("div"), function(i, ele) {
+                console.log(i);
+                console.log(ele);
+            })
+            $.each({
+                name: "andy",
+                age: 18
+            }, function(i, ele) {
+                console.log(i, ele);
+            })
+        })
+    </script>
+</body>
+
+</html>
